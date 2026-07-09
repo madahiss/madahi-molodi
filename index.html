@@ -3,48 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>آرشیو مداحی</title>
+<title>مداحی و مولودی</title>
 
 <style>
-body{
+*{
     margin:0;
-    font-family:tahoma;
-    background:#111;
-    color:white;
-    text-align:center;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:#fff;
 }
 
 header{
-    background:#000;
-    padding:20px;
-    border-bottom:3px solid gold;
+    background:linear-gradient(to bottom,#7a0000,#000);
+    padding:50px 20px;
+    text-align:center;
+    border-bottom:4px solid #b30000;
 }
 
-h1{
-    color:gold;
+header h1{
+    font-size:38px;
+    color:white;
+}
+
+header h2{
+    color:#ff4444;
+    margin-top:10px;
+    font-size:26px;
+}
+
+.search{
+    text-align:center;
+    margin:30px;
+}
+
+.search input{
+    width:90%;
+    max-width:500px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    background:#222;
+    color:white;
+}
+
+.section-title{
+    text-align:center;
+    color:#ff4444;
+    margin:35px 0 15px;
+    font-size:28px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
 }
 
 .card{
-    background:#1d1d1d;
-    width:300px;
-    margin:20px auto;
-    padding:20px;
-    border-radius:12px;
+    background:#1b1b1b;
+    border:2px solid #990000;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    transition:.3s;
 }
 
-a{
-    display:block;
-    margin:10px;
-    padding:12px;
-    background:gold;
-    color:black;
+.card:hover{
+    transform:translateY(-6px);
+    border-color:red;
+    box-shadow:0 0 20px red;
+}
+
+.card a{
+    color:white;
     text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
+    font-size:22px;
+    display:block;
 }
 
-a:hover{
-    background:#ffd700;
+footer{
+    text-align:center;
+    padding:25px;
+    background:#111;
+    margin-top:40px;
+    color:#888;
 }
 </style>
 
@@ -52,28 +101,57 @@ a:hover{
 <body>
 
 <header>
-<h1>🎙 آرشیو مداحی</h1>
-<p>به سایت مداحی خوش آمدید</p>
+<h1>السلام علیک یا اباعبدالله</h1>
+<h2>🎙 مداحی و مولودی</h2>
 </header>
 
+<div class="search">
+<input type="text" placeholder="جستجوی مداحی...">
+</div>
+
+<h2 class="section-title">دسته‌بندی‌ها</h2>
+
+<div class="grid">
+
 <div class="card">
-<h2>محرم</h2>
-<a href="#">شب اول</a>
-<a href="#">شب دوم</a>
-<a href="#">شب سوم</a>
+<a href="#">🟥 محرم</a>
 </div>
 
 <div class="card">
-<h2>ولادت</h2>
-<a href="#">میلاد امام علی (ع)</a>
-<a href="#">میلاد امام حسین (ع)</a>
+<a href="#">🟥 اربعین</a>
 </div>
 
 <div class="card">
-<h2>فاطمیه</h2>
-<a href="#">دهه اول</a>
-<a href="#">دهه دوم</a>
+<a href="#">🟥 حماسی</a>
 </div>
+
+</div>
+
+<h2 class="section-title">مداحان</h2>
+
+<div class="grid">
+
+<div class="card">
+<a href="#">🎤 حسین طاهری</a>
+</div>
+
+<div class="card">
+<a href="#">🎤 محمود کریمی</a>
+</div>
+
+<div class="card">
+<a href="#">🎤 مرتضی یبرنژاد</a>
+</div>
+
+<div class="card">
+<a href="#">🎤 مهدی رسولی</a>
+</div>
+
+</div>
+
+<footer>
+مداحی و مولودی © 2026
+</footer>
 
 </body>
 </html>
